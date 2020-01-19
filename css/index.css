@@ -2381,7 +2381,7 @@ header {
 #page-header .site-page {
   position: relative;
   padding-bottom: 0.3rem;
-  text-shadow: 0.05rem 0.05rem 0.1rem rgba(0,0,0,0.3);
+  text-shadow: 0.05rem 0.05rem 0.1rem #2c2c2c;
   font-size: 0.7rem;
   cursor: pointer;
 }
