@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>bflynote</title>
+      <link href="/2020/01/19/bflynote/"/>
+      <url>/2020/01/19/bflynote/</url>
+      
+        <content type="html"><![CDATA[<h1 id="BUTTERFLY-NOTE"><a href="#BUTTERFLY-NOTE" class="headerlink" title="BUTTERFLY NOTE"></a>BUTTERFLY NOTE</h1><h2 id="修改样式"><a href="#修改样式" class="headerlink" title="修改样式"></a>修改样式</h2><pre><code>由于替换了主页的index图片原来设置的滚动字幕sitesubtitle和菜单栏的颜色变模糊了,所以研究了一下要怎么修改。</code></pre><p>PUG文件相当于是一个个HTML的类。因为PUG其实就是原来的JADE文件。<br>观察themes主题里的source文件夹，里面有CSS,IMG,JS三个文件夹。整个主题的CSS就是在这个文件夹。在这个文件夹里搜索相关的CLASS就能够找到对应的样式。搜索site-sub-title就能找到他的样式在head.styl中，当中有color这个属性。color的变量值作者定义在var.styl中打开这个文件可以自己添加想要的变量。同样的菜单栏的样式side-page也在head.stle中。</p><h2 id="插件源码修改"><a href="#插件源码修改" class="headerlink" title="插件源码修改"></a>插件源码修改</h2><pre><code>因为打字效果subtitle的内容我改了所以想修改一下这个打字效果的属性。上网查看这个插件的代码属性然后搜索SUBTITLE在index.pug找到</code></pre><p>对应的设置:startdelay,typespeed.当然你也可以在这里添加这个插件的其他属性。</p><h2 id="插件测试"><a href="#插件测试" class="headerlink" title="插件测试"></a>插件测试</h2><div class="bili_video"><iframe src="//player.bilibili.com/player.html?aid=84292549" "" height="452" width="544" quality="high" allowfullscreen="true" scrolling="no" border="0" frameborder="no" framespacing="0"></iframe></div>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> note </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>前言</title>
+      <link href="/2020/01/18/hello-world/"/>
+      <url>/2020/01/18/hello-world/</url>
+      
+        <content type="html"><![CDATA[<h1 id="世事变改"><a href="#世事变改" class="headerlink" title="世事变改"></a>世事变改</h1><p>在csdn也有博客，不过荒废很久了。社会的现实，人生辗转。这个博客就来记录一些不一样的，多年的肥宅兴趣。</p><h2 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h2><p>十多年下来真是阅片无数。越看越挑，而且看的品味也在变。活着就是改变。</p><h2 id="其他技术"><a href="#其他技术" class="headerlink" title="其他技术"></a>其他技术</h2><p>在CSDN的博客是刚毕业时候的技术总结主要是单片机，VC也有。这里有空还是总结下其他东西吧。</p><h2 id="感悟"><a href="#感悟" class="headerlink" title="感悟"></a>感悟</h2><p>生活中会有一些突然的想法感悟，决定写在这里了。</p><p>date: 2017-10-31 20:38:1date: 2017-10-31 20:38:17</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
