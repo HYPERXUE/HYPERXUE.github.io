@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title>md-rule</title>
+      <link href="/2021/02/14/md-rule/"/>
+      <url>/2021/02/14/md-rule/</url>
+      
+        <content type="html"><![CDATA[<h1 id="标题等级"><a href="#标题等级" class="headerlink" title="标题等级"></a>标题等级</h1><p>前面带一个’#’，有多少个’#’代表多少级标题，最多到H6<br>‘#’后要带一个空格。并且H1下会带一条下划线</p><h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><p>列表分为有序列表与无序列表</p><h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><p>通过用’*’,’+’,’-‘来创建都是一个效用生成一个’.’</p><h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><p>使用’数字.’</p><h1 id="区块引用"><a href="#区块引用" class="headerlink" title="区块引用"></a>区块引用</h1><p>使用’&gt;’</p><h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><p>分割线可以由* - _（星号，减号，底线）这3个符号的至少3个符号表示（期中一种3个），注意至少要3个，且不需要连续，有空格也可以</p><h1 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h1><p>[内容]（地址）</p><h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><p>[内容]（地址）</p><h1 id="代码框"><a href="#代码框" class="headerlink" title="代码框"></a>代码框</h1><p>单行：使用 ``括住<br>多行：用<code>内容</code></p><h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table><thead><tr><th>表态1</th><th>表头2</th></tr></thead><tbody><tr><td>contnet cell</td><td>content cell</td></tr><tr><td>注意就是——就是下划线</td><td></td></tr><tr><td># 强调</td><td></td></tr><tr><td>加粗：两个星号或两个下划线包住</td><td></td></tr><tr><td>斜体：一个星号或一个下划线包住</td><td></td></tr></tbody></table><h1 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h1><p>双斜杠=<br>但斜杠<code>=</code></p><h1 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h1><p>使用~~包住</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> md </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>refer-hexo</title>
+      <link href="/2021/02/14/refer-hexo/"/>
+      <url>/2021/02/14/refer-hexo/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>springboot+mybatis and WX小程序</title>
       <link href="/2020/05/01/spbootnote/"/>
       <url>/2020/05/01/spbootnote/</url>
@@ -42,11 +74,11 @@
     
     
     <entry>
-      <title>后端mysql安装过程</title>
-      <link href="/2020/01/18/mysql/"/>
-      <url>/2020/01/18/mysql/</url>
+      <title>前言</title>
+      <link href="/2020/01/18/hello-world/"/>
+      <url>/2020/01/18/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>M</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="世事变改"><a href="#世事变改" class="headerlink" title="世事变改"></a>世事变改</h1><p>在csdn也有博客，不过荒废很久了。社会的现实，人生辗转。这个博客就来记录一些不一样的，多年的肥宅兴趣。</p><h2 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h2><p>十多年下来真是阅片无数。越看越挑，而且看的品味也在变。活着就是改变。</p><h2 id="其他技术"><a href="#其他技术" class="headerlink" title="其他技术"></a>其他技术</h2><p>在CSDN的博客是刚毕业时候的技术总结主要是单片机，VC也有。这里有空还是总结下其他东西吧。</p><h2 id="感悟"><a href="#感悟" class="headerlink" title="感悟"></a>感悟</h2><p>生活中会有一些突然的想法感悟，决定写在这里了。</p><p>date: 2017-10-31 20:38:1date: 2017-10-31 20:38:17</p>]]></content>
       
       
       
@@ -55,11 +87,11 @@
     
     
     <entry>
-      <title>前言</title>
-      <link href="/2020/01/18/hello-world/"/>
-      <url>/2020/01/18/hello-world/</url>
+      <title>后端mysql安装过程</title>
+      <link href="/2020/01/18/mysql/"/>
+      <url>/2020/01/18/mysql/</url>
       
-        <content type="html"><![CDATA[<h1 id="世事变改"><a href="#世事变改" class="headerlink" title="世事变改"></a>世事变改</h1><p>在csdn也有博客，不过荒废很久了。社会的现实，人生辗转。这个博客就来记录一些不一样的，多年的肥宅兴趣。</p><h2 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h2><p>十多年下来真是阅片无数。越看越挑，而且看的品味也在变。活着就是改变。</p><h2 id="其他技术"><a href="#其他技术" class="headerlink" title="其他技术"></a>其他技术</h2><p>在CSDN的博客是刚毕业时候的技术总结主要是单片机，VC也有。这里有空还是总结下其他东西吧。</p><h2 id="感悟"><a href="#感悟" class="headerlink" title="感悟"></a>感悟</h2><p>生活中会有一些突然的想法感悟，决定写在这里了。</p><p>date: 2017-10-31 20:38:1date: 2017-10-31 20:38:17</p>]]></content>
+        <content type="html"><![CDATA[<p>M</p>]]></content>
       
       
       
