@@ -27,7 +27,7 @@
       <link href="/2021/02/14/refer-hexo/"/>
       <url>/2021/02/14/refer-hexo/</url>
       
-        <content type="html"><![CDATA[<h1 id="hexo指令"><a href="#hexo指令" class="headerlink" title="hexo指令"></a>hexo指令</h1><p>hexo clean<br>hexo g<br>hexo d</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="hexo指令"><a href="#hexo指令" class="headerlink" title="hexo指令"></a>hexo指令</h1><p>hexo clean<br>hexo g<br>hexo d</p><h1 id="NPM管理nodejs版本"><a href="#NPM管理nodejs版本" class="headerlink" title="NPM管理nodejs版本"></a>NPM管理nodejs版本</h1><p>如果系统安装多个node并且都不在同一个路径，选择运行哪个版本的node可以采用全局安装版本管理器n<br>npm install -g n<br>直接 n 选择版本</p>]]></content>
       
       
       
@@ -80,11 +80,11 @@
     
     
     <entry>
-      <title>后端mysql安装过程</title>
-      <link href="/2020/01/18/mysql/"/>
-      <url>/2020/01/18/mysql/</url>
+      <title>前言</title>
+      <link href="/2020/01/18/hello-world/"/>
+      <url>/2020/01/18/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>M</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="世事变改"><a href="#世事变改" class="headerlink" title="世事变改"></a>世事变改</h1><p>在csdn也有博客，不过荒废很久了。社会的现实，人生辗转。这个博客就来记录一些不一样的，多年的肥宅兴趣。</p><h2 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h2><p>十多年下来真是阅片无数。越看越挑，而且看的品味也在变。活着就是改变。</p><h2 id="其他技术"><a href="#其他技术" class="headerlink" title="其他技术"></a>其他技术</h2><p>在CSDN的博客是刚毕业时候的技术总结主要是单片机，VC也有。这里有空还是总结下其他东西吧。</p><h2 id="感悟"><a href="#感悟" class="headerlink" title="感悟"></a>感悟</h2><p>生活中会有一些突然的想法感悟，决定写在这里了。</p><p>date: 2017-10-31 20:38:1date: 2017-10-31 20:38:17</p>]]></content>
       
       
       
@@ -93,11 +93,11 @@
     
     
     <entry>
-      <title>前言</title>
-      <link href="/2020/01/18/hello-world/"/>
-      <url>/2020/01/18/hello-world/</url>
+      <title>后端mysql安装过程</title>
+      <link href="/2020/01/18/mysql/"/>
+      <url>/2020/01/18/mysql/</url>
       
-        <content type="html"><![CDATA[<h1 id="世事变改"><a href="#世事变改" class="headerlink" title="世事变改"></a>世事变改</h1><p>在csdn也有博客，不过荒废很久了。社会的现实，人生辗转。这个博客就来记录一些不一样的，多年的肥宅兴趣。</p><h2 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h2><p>十多年下来真是阅片无数。越看越挑，而且看的品味也在变。活着就是改变。</p><h2 id="其他技术"><a href="#其他技术" class="headerlink" title="其他技术"></a>其他技术</h2><p>在CSDN的博客是刚毕业时候的技术总结主要是单片机，VC也有。这里有空还是总结下其他东西吧。</p><h2 id="感悟"><a href="#感悟" class="headerlink" title="感悟"></a>感悟</h2><p>生活中会有一些突然的想法感悟，决定写在这里了。</p><p>date: 2017-10-31 20:38:1date: 2017-10-31 20:38:17</p>]]></content>
+        <content type="html"><![CDATA[<p>M</p>]]></content>
       
       
       
