@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>thinkjs-note</title>
+      <link href="/2021/02/26/thinkjs-note/"/>
+      <url>/2021/02/26/thinkjs-note/</url>
+      
+        <content type="html"><![CDATA[<h1 id="thinkjs-的基本梳理"><a href="#thinkjs-的基本梳理" class="headerlink" title="thinkjs 的基本梳理"></a>thinkjs 的基本梳理</h1><p>最开始加载<br>Thinkjs中的模块lib-&gt;loader.js<br>loadData() {<br>    // add data to koa application<br>    think.app.modules = think.loader.modules;<br>    think.app.models = think.loader.loadModel();<br>    think.app.services = think.loader.loadService();<br>    think.app.logics = think.loader.loadLogic();<br>    think.app.controllers = think.loader.loadController();<br>    think.app.routers = think.loader.loadRouter();<br>    think.app.validators = think.loader.loadValidator();<br>  }</p><p>Think-loader-&gt;index.js-&gt;loaderlogic()<br>logic -&gt;loader.js-&gt;commom.js加载文件（<br>CommonLoader.loadFiles循环加载所有admin/logic下的）<br>（CommonLoader.loadFiles循环加载所有api/logic下的）<br>所有东西存放在cache，</p><h2 id="分析url链接"><a href="#分析url链接" class="headerlink" title="分析url链接"></a>分析url链接</h2><p>Middleware.js分析url链接<br>this.parse(middlewares, this.loadFiles(appPath, modules.length), app);<br>think-router.js<br>parseController<br>分析链接分为controller, pathname<br>分析请求行为<br>parseAction({ pathname, ruleMethod })<br>get or set query data<br>nideshop-master\node_modules\parseurl\index.js<br>这个文件parseurl分析小程序URL链接 req.url<br>req.<em>parsedUrl<br>中的<br>raw:’/api/brand/detail?id=1001000’<br>auth:null<br>hash:null<br>host:null<br>hostname:null<br>href:’/api/brand/detail?id=1001000’<br>path:’/api/brand/detail?id=1001000’<br>pathname:’/api/brand/detail’<br>port:null<br>protocol:null<br>query:’id=1001000’<br>search:’?id=1001000’<br>slashes:null<br><em>_proto</em></em>:Object</p><p>/**</p><ul><li><p>Get parsed query-string.</p></li><li></li><li><p>@return {Object}</p></li><li><p>@api public</p></li><li><p>/</p><p>get query() {<br>const str = this.querystring;  ID值<br>const c = this._querycache = this._querycache || {};<br>return c[str] || (c[str] = qs.parse(str));<br>},<br>nideshop-master\node_modules\koa\lib\request.js<br>_http_commom.js 就是nodejs 的http<br>Parser(common.js) 继承自 HTTPParser（node_http_parser.cc），并绑定了4个解析周期回调函数：parserOnHeaders、parserOnHeadersComplete、parserOnBody、parserOnMessageComplete<br>在执行 parser.execute 过程中，HTTPParser 会在解析周期内回调这些函数。<br>TCP数据到达时， 先执行execute()<br>当 http_parser.c 解析到 on_headers_complete 时，执行HTTP_CB(on_headers_complete)回调<br>完整的http请求是这样的：<br>•    客户端发起HTTP请求，首先触发Server端的connection事件，建立TCP链接。<br>•    Server接收到connection事件后，建立TCP连接，并暴露出套接字，通过套接字监听’data’事件；初始化http-parser，为后续解析数据备用。<br>•    HTTP请求数据到达Server端，parser执行execute方法进行解析，请求头解析成功后，通过回调触发request事件。<br>•    至此，我们在Server回调函数中，就接收到了此次http请求的request</p></li></ul><p>所有的项目config都最后会合并在一起然后加载<br>框架默认的配置 -&gt; 项目模式下框架配置 -&gt; 项目公共配置 -&gt; 项目模式下的公共配置 -&gt; 模块下的配置<br>前两个可以忽略掉，那是 thinkjs 框架自身的配置设置，通常里面不会有我们项目会用到的配置参数。<br>第三个和第四个则是在不同的项目创建模式<br>normal mode<br>thinkjs_normal/src/config/*<br>module mode<br>thinkjs_module/src/common/config/*<br>在nideshop 设置了publicController<br>在访问时会判断是否未需要登录去访问的模块</p><h2 id="数据库查询"><a href="#数据库查询" class="headerlink" title="数据库查询"></a>数据库查询</h2><p>在每一个controller里面，因为继承的是model<br>例如<br>Var _this=that;<br>yield model.field([‘id’, ‘name’, ‘floor_price’, ‘app_list_pic_url’]).page(_this.get(‘page’) || 1, _this.get(‘size’) || 10).countSelect();</p><p>这里对数据库的操作就是通过这个model.field(string) string就是要查询的数据库字段。<br>Return(this);设置后会赋值到 this.options.field 属性上。<br>Model.page(page,pagesize)<br>Page:设置当前页数，size就是每页的条数。<br>最终其实就是解释到变成sql中limit中的参数。<br>设置 SQL 语句里的 limit，会赋值到 this.options.limit 属性上，便于后续解析。<br>所以model中的方法有一些就是赋值到option上然后通过conuselect来分析然后countselect会调用parseoptions来分析 option值<br>就能得到数据库中的数据，<br>最后调用module.success = this.success(data)返回发送数据，然后就是加入队列返回发送</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> thinkjs </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>md-rule</title>
       <link href="/2021/02/14/md-rule/"/>
       <url>/2021/02/14/md-rule/</url>
@@ -80,11 +99,11 @@
     
     
     <entry>
-      <title>前言</title>
-      <link href="/2020/01/18/hello-world/"/>
-      <url>/2020/01/18/hello-world/</url>
+      <title>后端mysql安装过程</title>
+      <link href="/2020/01/18/mysql/"/>
+      <url>/2020/01/18/mysql/</url>
       
-        <content type="html"><![CDATA[<h1 id="世事变改"><a href="#世事变改" class="headerlink" title="世事变改"></a>世事变改</h1><p>在csdn也有博客，不过荒废很久了。社会的现实，人生辗转。这个博客就来记录一些不一样的，多年的肥宅兴趣。</p><h2 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h2><p>十多年下来真是阅片无数。越看越挑，而且看的品味也在变。活着就是改变。</p><h2 id="其他技术"><a href="#其他技术" class="headerlink" title="其他技术"></a>其他技术</h2><p>在CSDN的博客是刚毕业时候的技术总结主要是单片机，VC也有。这里有空还是总结下其他东西吧。</p><h2 id="感悟"><a href="#感悟" class="headerlink" title="感悟"></a>感悟</h2><p>生活中会有一些突然的想法感悟，决定写在这里了。</p><p>date: 2017-10-31 20:38:1date: 2017-10-31 20:38:17</p>]]></content>
+        <content type="html"><![CDATA[<p>M</p>]]></content>
       
       
       
@@ -93,11 +112,11 @@
     
     
     <entry>
-      <title>后端mysql安装过程</title>
-      <link href="/2020/01/18/mysql/"/>
-      <url>/2020/01/18/mysql/</url>
+      <title>前言</title>
+      <link href="/2020/01/18/hello-world/"/>
+      <url>/2020/01/18/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>M</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="世事变改"><a href="#世事变改" class="headerlink" title="世事变改"></a>世事变改</h1><p>在csdn也有博客，不过荒废很久了。社会的现实，人生辗转。这个博客就来记录一些不一样的，多年的肥宅兴趣。</p><h2 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h2><p>十多年下来真是阅片无数。越看越挑，而且看的品味也在变。活着就是改变。</p><h2 id="其他技术"><a href="#其他技术" class="headerlink" title="其他技术"></a>其他技术</h2><p>在CSDN的博客是刚毕业时候的技术总结主要是单片机，VC也有。这里有空还是总结下其他东西吧。</p><h2 id="感悟"><a href="#感悟" class="headerlink" title="感悟"></a>感悟</h2><p>生活中会有一些突然的想法感悟，决定写在这里了。</p><p>date: 2017-10-31 20:38:1date: 2017-10-31 20:38:17</p>]]></content>
       
       
       
